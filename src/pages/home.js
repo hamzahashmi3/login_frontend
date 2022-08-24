@@ -1,8 +1,10 @@
 import React from 'react';
-import { StyledTitle, StyledSubTitle, Avatar } from '../components/Styles';
+import { StyledTitle, StyledSubTitle, Avatar, StyledButton } from '../components/Styles';
 
 // logo
 import Logo from "./../assets/logo.png"
+
+
 const home = () => {
   return (
     <div>
@@ -20,6 +22,9 @@ const home = () => {
       </div>
         <StyledTitle size={65}> welcome to Authenticator </StyledTitle>
         <StyledSubTitle size={27}> feel free to explore our authenticator </StyledSubTitle>
+    
+        <StyledButton to="/login">Login</StyledButton>
+        <StyledButton to="/signup">SignUp</StyledButton>
     </div>
   )
 }
