@@ -5,16 +5,19 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Login from './pages/Login';
 
 function App() {
   return (
     <>
       <Router>
-        <Routes>
+        {/* <Routes> */}
           <StyledContainer>
-            <Route path="/" element={<Home />} />
+            <Login />
+          {/* <Home /> */}
+            {/* <Route path="/" element={<Home />} /> */}
           </StyledContainer>
-        </Routes>
+        {/* </Routes> */}
       </Router>
     </>
   );
